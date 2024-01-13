@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="my-[50vh]">
       {projects.map((project, index) => {
-        return <Card key={index} {...project} />;
+        return <Card key={index} {...project} i={index} />;
       })}
     </main>
   );
