@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { M_PLUS_1 } from "next/font/google";
 interface CardProps {
   title: string;
   src: string;
@@ -40,7 +39,7 @@ export default function Card({
     // to make position:sticky work -> you need to specify a top-0
     <div
       ref={container}
-      className={` sticky top-0 h-[100vh] flex items-center justify-center`}
+      className={` sticky top-0 h-[100vh] flex items-center justify-center text-[#f4efe8]`}
     >
       <motion.div
         //   A dynamic top position is set depending on the index of each cards, creating a simple stacking effect.
